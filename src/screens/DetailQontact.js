@@ -22,11 +22,6 @@ export default function DetailQontact({ navigation, route }) {
     dispatch(fetchSingleContact(id));
   }, []);
 
-  // useFocusEffect(
-  //   React.useCallback(() => {
-  //     dispatch(fetchSingleContact(id));
-  //   }, [singleContact])
-  // );
   if (!singleContact) {
     return (
       <View>
